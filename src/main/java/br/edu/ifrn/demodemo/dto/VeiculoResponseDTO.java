@@ -33,15 +33,15 @@ public class VeiculoResponseDTO {
     
     }
 
-    public static VeiculoResponseDTO fromModel (Veiculo Veiculo){
+    public static VeiculoResponseDTO fromModel (Veiculo veiculo){
         return VeiculoResponseDTO.builder()
                 .id(veiculo.getId())
                 .placa(veiculo.getPlaca())
                 .modelo(veiculo.getModelo())
                 .placa(veiculo.getPlaca())
                 .tipo(veiculo.getTipo())
-                .propietario(veiculo.getNomeProprietario())
-                .build()
+                .nomeProprietario(veiculo.getNomeProprietario())
+                .build();
 
     }
 
