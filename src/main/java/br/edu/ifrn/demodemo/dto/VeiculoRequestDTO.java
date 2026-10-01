@@ -22,13 +22,12 @@ public class VeiculoRequestDTO {
 
     @NotNull 
     private Integer anoFabricao;
-    @NotBlank(message = "É obrigatorio possuir um titulo")
+    @NotBlank(message = "É obrigatorio possuir um tipo")
     private String tipo;
-    @NotBlank 
 
+    @NotBlank
     private String nomeProprietario;
 
-    
     public Veiculo toModel() {
         return new Veiculo(null, this.placa, this.modelo, this.tipo, this.anoFabricao, this.nomeProprietario);
     }
